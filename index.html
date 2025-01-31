@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="hearts" id="heartsContainer"></div>
+    <div class="container">
+        <h1>Will you be my Valentine? 💖</h1>
+        <div class="buttons">
+            <button onclick="respond('Yes')">Yes!</button>
+            <button onclick="respond('No')">No</button>
+        </div>
+    </div>
+
+    <!-- Hidden Formspree Form -->
+    <form id="responseForm" action="https://formspree.io/f/mbldyddv" method="POST" style="display: none;">
+        <input type="hidden" name="answer" id="answerInput">
+        <input type="hidden" name="_subject" value="Valentine's Response!">
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
